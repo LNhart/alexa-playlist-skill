@@ -1,0 +1,76 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "de-DE": {
+          "summary": "Mit diesem Skill kann man Playlist nach dem Namen suchen.",
+          "examplePhrases": [
+            "Suche im Playlist Buch bitte nach der Playlist \"Brahms Klavierkonzerte\""
+          ],
+          "keywords": [
+            "playlist",
+            "suche"
+          ],
+          "name": "Playlist Buch",
+          "description": "Dieser Skill ist spezifisch für Nutzer, die nicht über Handy oder Computer Zugriff auf ihren Spotify Account haben (wie zB. Blinde).",
+          "smallIconUri": "file://assets/images/de-DE_smallIconUri.png",
+          "largeIconUri": "file://assets/images/de-DE_largeIconUri.png"
+        },
+        "en-US": {
+          "summary": "Guess a number, and Alexa will tell you if you need to guess higher or lower.",
+          "examplePhrases": [
+            "Alexa open high low game",
+            "Alexa start high low game",
+            "Alexa ask high low game is it {number}"
+          ],
+          "name": "Spotify Assistant",
+          "description": "Guess a number, and Alexa will tell you if you need to guess higher or lower. She will also tell you how many times you have played."
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Der persönliche Spotify Account muss über Account Linking verbunden werden. Der invocation Name ist \"playlist buch\". Der Skill kann dann angewiesen werden, nach einem Playlist Namen zu suchen, zB. durch \"Bitte suche im Playlist Buch nach der Playlist Beethoven Klavierkonzert\".",
+      "category": "CHILDRENS_MUSIC",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:740747637948:function:465f7eac-b293-4147-a777-63860e506ff2:Release_0"
+        },
+        "interfaces": [],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:740747637948:function:465f7eac-b293-4147-a777-63860e506ff2:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:740747637948:function:465f7eac-b293-4147-a777-63860e506ff2:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:740747637948:function:465f7eac-b293-4147-a777-63860e506ff2:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "de-DE": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}

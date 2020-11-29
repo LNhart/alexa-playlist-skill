@@ -1,0 +1,56 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "playlist buch",
+      "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "SearchMyPlaylistIntent",
+          "slots": [
+            {
+              "name": "playlist_name",
+              "type": "AMAZON.MusicAlbum"
+            }
+          ],
+          "samples": [
+            "bitte suche im playlist buch nach {playlist_name}",
+            "playlist buch suche nach der playlist mit dem namen {playlist_name}",
+            "gucke im playlist buch ob ich die playlist {playlist_name} habe",
+            "suche im playlist buch nach der playlist {playlist_name}",
+            "suche nach einer playlist mit {playlist_name}",
+            "Bitte suche nach der playlsit mit dem namen {playlist_name}",
+            "habe ich eine playlist mit {playlist_name}",
+            "suche nach der playlist {playlist_name}",
+            "bitte suche nach der playlist {playlist_name}"
+          ]
+        }
+      ],
+      "types": [],
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      }
+    }
+  },
+  "version": "2"
+}
